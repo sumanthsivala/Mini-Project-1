@@ -1,0 +1,54 @@
+﻿@model OnlineBankingSystem.Models.UpdateCustomerViewModel
+
+@{
+}
+
+<h1>Edit Employee</h1>
+
+<form method="post" action="View" class="mt-5">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Id</label>
+        <input type="text" class="form-control" asp-for="Id" readonly>
+
+
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">FirstName</label>
+        <input type="text" class="form-control" asp-for="FirstName">
+
+
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">LastName</label>
+        <input type="text" class="form-control" asp-for="LastName">
+
+
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <input type="email" class="form-control" asp-for="Email">
+
+
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Salary</label>
+        <input type="number" class="form-control" asp-for="Salary">
+
+
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Customer Type</label>
+        <input type="text" class="form-control" asp-for="CustomerType">
+
+
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-danger" asp-action="Delete" asp-controller="Customer">Delete</button>
+</form>
+
