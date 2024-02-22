@@ -32,7 +32,7 @@ namespace OnlineBankingSystem.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Add(AddEmployeeViewModel addCustomerRequest)
+        public async Task<IActionResult> Add(AddcustomerViewModel addCustomerRequest)
         {
             var customer = new Customer()
             {
